@@ -19,13 +19,13 @@ MainFrame.Visible = true
 
 local ToggleButton = Instance.new("TextButton", MainFrame)
 ToggleButton.Text = "Enable Camlock"
-ToggleButton.Size = UDim2.new(1, 0, 0.5, 0)
+ToggleButton.Size = UDim2.new(1, 0, 0.2, 0)
 ToggleButton.Position = UDim2.new(0, 0, 0, 0)
 
 local CloseButton = Instance.new("TextButton", MainFrame)
 CloseButton.Text = "Close GUI"
-CloseButton.Size = UDim2.new(1, 0, 0.5, 0)
-CloseButton.Position = UDim2.new(0, 0, 0.5, 0)
+CloseButton.Size = UDim2.new(1, 0, 0.2, 0)
+CloseButton.Position = UDim2.new(0, 0, 0.2, 0)
 
 -- Functions
 local function isTeamMate(player)

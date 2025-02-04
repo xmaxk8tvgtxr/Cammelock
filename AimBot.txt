@@ -94,7 +94,7 @@ local function RPTXOJ_fake_script() -- TextButton.LocalScript
 			end
 		else
 			script.Parent.Text = "_"
-			game:GetService("TweenService"):Create(script.Parent.Parent.Parent, TweenInfo.new(0.5, Enum.EasingStyle.Linear), {
+			game:GetService("TweenService"):Create(script.Parent.Parent.Parent, TweenInfo.new(0.5, Enum.EasingStyle.Linear), 
 				BackgroundTransparency = 0
 			}):Play()
 			for i, v in pairs(script.Parent.Parent.Parent:GetChildren()) do
@@ -148,9 +148,9 @@ local function CIXXD_fake_script() -- TextButton_2.LocalScript
 	end
 	
 	game:GetService("RunService").RenderStepped:Connect(function()
-		local closest = getClosestPlayerToCursor("Close")
-		if state and closest and closest.Character:FindFirstChild("Close") then
-			lookAt(Cam.CFrame.p, closest.Character:FindFirstChild("Close").Position)
+		local closest = getClosestPlayerToCursor
+		if state and closest and closest.Character:FindFirstChild then
+			lookAt(Cam.CFrame.p, closest.Character:FindFirstChild.Position)
 		end
 	end)
 end

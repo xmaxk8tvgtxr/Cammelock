@@ -148,15 +148,15 @@ local function CIXXD_fake_script() -- TextButton_2.LocalScript
 	end
 	
 	game:GetService("RunService").RenderStepped:Connect(function()
-		local closest = getClosestPlayerToCursor("Head")
-		if state and closest and closest.Character:FindFirstChild("Head") then
-			lookAt(Cam.CFrame.p, closest.Character:FindFirstChild("Head").Position)
+		local closest = getClosestPlayerToCursor("Close")
+		if state and closest and closest.Character:FindFirstChild("Close") then
+			lookAt(Cam.CFrame.p, closest.Character:FindFirstChild("Close").Position)
 		end
 	end)
 end
-coroutine.wrap(CIXXD_fake_script)()
+coroutine.wrap(CIXXD_ake_script)()
 local function QNWNII_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
+	local script =enstance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Selectable = true
